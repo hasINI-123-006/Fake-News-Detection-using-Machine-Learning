@@ -63,7 +63,7 @@ These files are used for training and evaluating the machine learning models in 
 | KNN                | 92%     | 0.92     |
 | **XGBoost**        | **100%** | **1.00** |
 
-**Why XGBoost Performed Best**
+**Why XGBoost Performed Best :**
 XGBoost outperformed other models because it builds trees sequentially, correcting errors from previous trees, handles sparse TF-IDF features efficiently, and includes regularization to prevent overfitting. These strengths make it highly effective for text classification tasks like fake news detection.
 
 ---
