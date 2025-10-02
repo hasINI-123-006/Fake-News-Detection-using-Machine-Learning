@@ -7,16 +7,21 @@ This project compares multiple models (Logistic Regression, Random Forest, XGBoo
 ---
 
 ##  Objective  
-Build a robust machine learning system to:  
-- Identify whether a news article is **Fake** or **Real**  
-- Compare traditional ML algorithms on text classification tasks  
-- Understand which models perform better on high-dimensional sparse features  
-
+The goal of this project is to build a machine learning pipeline that can classify news articles as **Fake** or **Real**. Specifically, it focuses on:
+- Exploring and preprocessing text data using techniques like tokenization, lemmatization, and TF-IDF vectorization  
+- Comparing the performance of multiple traditional machine learning models, including Logistic Regression, Naive Bayes, Random Forest, Decision Tree, KNN, and
+  XGBoost  
+- Understanding which models perform better on high-dimensional sparse text features
+ 
 ---
 
 ##  Dataset  
-- Source: [Kaggle Fake News Dataset](https://www.kaggle.com/c/fake-news)  
-- Contains thousands of labeled news articles with fields like **title, text, subject, date**  
+This project utilizes the **Fake and Real News Dataset** by Clément Bisaillon, available on Kaggle:
+[Fake and Real News Dataset](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)
+The dataset includes:
+- `True.csv`: Contains real news articles.
+- `Fake.csv`: Contains fake news articles.
+These files are used for training and evaluating the machine learning models in this project.
 - Target variable:  
   - **1 → Fake News**  
   - **0 → Real News**  
@@ -51,14 +56,15 @@ Build a robust machine learning system to:
 
 | Model              | Accuracy | F1-Score |
 |--------------------|----------|----------|
-| Logistic Regression | 90%     | 0.89     |
-| Naive Bayes        | 88%     | 0.87     |
-| Decision Tree      | 85%     | 0.84     |
-| Random Forest      | 92%     | 0.91     |
-| KNN                | 82%     | 0.80     |
-| **XGBoost**        | **95%** | **0.94** |
+| Logistic Regression | 98%     | 0.98     |
+| Naive Bayes        | 90%     | 0.90     |
+| Decision Tree      | 99%     | 0.99     |
+| Random Forest      | 100%     | 1.00     |
+| KNN                | 92%     | 0.92     |
+| **XGBoost**        | **100%** | **1.00** |
 
- **XGBoost performed the best** due to its ability to handle **high-dimensional sparse TF-IDF features** efficiently.  
+** Why XGBoost Performed Best**
+XGBoost outperformed other models because it builds trees sequentially, correcting errors from previous trees, handles sparse TF-IDF features efficiently, and includes regularization to prevent overfitting. These strengths make it highly effective for text classification tasks like fake news detection.
 
 ---
 
@@ -70,12 +76,13 @@ Build a robust machine learning system to:
 
 ---
 
-##  Next Steps  
+##  Future Enhancements  
 
-- Deploy the model as a **Streamlit web app** or Flask API  
-- Improve robustness with **transformer-based models (BERT, DistilBERT)**  
-- Handle **class imbalance** using oversampling techniques (SMOTE)  
-- Add **explainability** with SHAP/LIME for model transparency  
+This project currently uses traditional machine learning models with TF-IDF features to classify news as fake or real. In the future, it could be extended by:
+
+- Deploying the model as a simple web app using **Streamlit** or **Flask**  
+- Experimenting with transformer-based models like **BERT** for potentially better accuracy  
+- Adding explainability tools like **SHAP** or **LIME** to understand why the model makes certain predictions
 
 ---
 
