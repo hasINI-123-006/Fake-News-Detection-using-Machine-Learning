@@ -6,7 +6,7 @@ This project compares multiple models (Logistic Regression, Random Forest, XGBoo
 
 ---
 
-## 🎯 Objective  
+##  Objective  
 Build a robust machine learning system to:  
 - Identify whether a news article is **Fake** or **Real**  
 - Compare traditional ML algorithms on text classification tasks  
@@ -14,7 +14,7 @@ Build a robust machine learning system to:
 
 ---
 
-## 📂 Dataset  
+##  Dataset  
 - Source: [Kaggle Fake News Dataset](https://www.kaggle.com/c/fake-news)  
 - Contains thousands of labeled news articles with fields like **title, text, subject, date**  
 - Target variable:  
@@ -23,7 +23,7 @@ Build a robust machine learning system to:
 
 ---
 
-## 🔍 Steps Followed  
+##  Steps Followed  
 
 1. **Exploratory Data Analysis (EDA)**  
    - Word distributions, text length analysis, most frequent words  
@@ -47,7 +47,7 @@ Build a robust machine learning system to:
 
 ---
 
-## 📊 Results  
+##  Results  
 
 | Model              | Accuracy | F1-Score |
 |--------------------|----------|----------|
@@ -58,11 +58,11 @@ Build a robust machine learning system to:
 | KNN                | 82%     | 0.80     |
 | **XGBoost**        | **95%** | **0.94** |
 
-✅ **XGBoost performed the best** due to its ability to handle **high-dimensional sparse TF-IDF features** efficiently.  
+ **XGBoost performed the best** due to its ability to handle **high-dimensional sparse TF-IDF features** efficiently.  
 
 ---
 
-## 🧠 Key Insights  
+##  Key Insights  
 
 - **TF-IDF over Bag of Words:** TF-IDF reduces the weight of common words ("the", "is") and gives importance to informative words, leading to better performance.  
 - **Why XGBoost works better:** Tree-based ensemble models like Random Forest and XGBoost handle sparse, high-dimensional data better than models like KNN or single Decision Trees.  
@@ -70,7 +70,7 @@ Build a robust machine learning system to:
 
 ---
 
-## 🚀 Next Steps  
+##  Next Steps  
 
 - Deploy the model as a **Streamlit web app** or Flask API  
 - Improve robustness with **transformer-based models (BERT, DistilBERT)**  
@@ -79,10 +79,10 @@ Build a robust machine learning system to:
 
 ---
 
-## ⚡ How to Run  
+##  How to Run  
 
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/your-username/Fake-News-Detection-Using-Machine-Learning.git
+   git clone https://github.com/hasINI-123-006/Fake-News-Detection-Using-Machine-Learning.git
    cd Fake-News-Detection-Using-Machine-Learning
 
