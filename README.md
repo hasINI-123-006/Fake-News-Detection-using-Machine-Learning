@@ -87,7 +87,7 @@ The app runs locally and automatically opens in the browser.
 1. Clone this repository:  
    ```bash
    git clone https://github.com/hasINI-123-006/Fake-News-Detection-using-Machine-Learning.git
-   cd Fake-News-Detection-using-Machine-Learning
+   cd Fake-News-Detection-Using-Machine-Learning
 2. Install required dependencies 
    pip install -r ML_pj_requirements.txt
 3. Run the application
